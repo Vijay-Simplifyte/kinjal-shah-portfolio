@@ -1,0 +1,30 @@
+{
+  "name": "kinjal-shah-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "npm --prefix kinjal-main run dev",
+    "build": "npm --prefix kinjal-main run build",
+    "start": "npm --prefix kinjal-main run start",
+    "lint": "npm --prefix kinjal-main run lint",
+    "typecheck": "npm --prefix kinjal-main run typecheck"
+  },
+  "dependencies": {
+    "framer-motion": "^11.3.0",
+    "lucide-react": "^0.447.0",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^15.0.0",
+    "typescript": "^5"
+  }
+}
