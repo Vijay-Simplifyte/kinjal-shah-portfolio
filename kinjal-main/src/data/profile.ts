@@ -11,7 +11,7 @@ export const PROFILE_DATA: ProfileData = {
   email: "2kshah34@gmail.com",
   phone: "+91 9429704100",
   phoneRaw: "+919429704100",
-  portfolioUrl: "https://kinjalshahportfolio.vercel.app/",
+  portfolioUrl: "https://kinjal-shah-portfolio.vercel.app/",
   linkedin: "https://www.linkedin.com/in/kinjal-shah-78b21a406/",
   figma: "https://www.figma.com",
   github: "https://github.com/2kshah34-dot",
