@@ -705,7 +705,9 @@ export default function PortfolioHome() {
                 {/* Text + CTA */}
                 <div className="hero-text-cta">
                   <p className="lead">
-                    vijay
+                    UI/UX designer from Bhavnagar. I design websites, landing pages
+                    and mobile screens, plus the brand work that goes around them:
+                    logos, brochures and social media.
                   </p>
                   <div className="cta">
                     <a

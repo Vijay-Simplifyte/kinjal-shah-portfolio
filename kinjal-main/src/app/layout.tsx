@@ -125,7 +125,27 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={`js ${fontDisplay.variable} ${fontSans.variable}`}
+      style={{ colorScheme: "only light" }}
     >
+      <head>
+        {/*
+          This <style> block is injected as the VERY FIRST element in <head>.
+          It runs before any external CSS loads, before the browser can apply
+          any automatic dark-mode transform. All three declarations together
+          are required for full cross-browser coverage:
+            1. :root color-scheme  → standard spec (Chrome, Edge, Safari)
+            2. html color-scheme   → reinforces it at the element level
+            3. html/body bg+color  → hard-coded fallback for browsers that
+                                     completely ignore color-scheme
+        */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          :root { color-scheme: only light !important; }
+          html  { color-scheme: only light !important; background-color: #F5F0E8 !important; }
+          body  { background-color: #F5F0E8 !important; color: #1A1208 !important; }
+        `}} />
+        <meta name="color-scheme" content="only light" />
+        <meta name="supported-color-schemes" content="light" />
+      </head>
       <body>
         <script
           type="application/ld+json"
