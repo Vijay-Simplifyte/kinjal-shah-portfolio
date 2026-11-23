@@ -16,12 +16,13 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   viewportFit: "cover",
-  colorScheme: "light",           // tells browser: only light mode supported
+  // "only light" → emits <meta name="color-scheme" content="only light">
+  // This is the strongest signal: tells every browser engine this document
+  // has no dark variant and must NOT apply any automatic dark transformation.
+  colorScheme: "only light",
   themeColor: [
-    // Both media entries return the SAME warm-white — locks the chrome colour
-    // regardless of whether the OS is in light or dark mode.
     { media: "(prefers-color-scheme: light)", color: "#F5F0E8" },
-    { media: "(prefers-color-scheme: dark)",  color: "#F5F0E8" },
+    { media: "(prefers-color-scheme: dark)", color: "#F5F0E8" },
   ],
 };
 
@@ -125,11 +126,6 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`js ${fontDisplay.variable} ${fontSans.variable}`}
     >
-      <head>
-        {/* Force light-only color-scheme so dark-mode browsers don't recolour anything */}
-        <meta name="color-scheme" content="light" />
-        <meta name="supported-color-schemes" content="light" />
-      </head>
       <body>
         <script
           type="application/ld+json"
