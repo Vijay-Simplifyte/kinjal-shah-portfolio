@@ -657,7 +657,7 @@ export default function PortfolioHome() {
                 <div className="hero-dot hero-dot-3" />
 
                 {/* Cat paw prints — animated fade in/out */}
-                {[1,2,3,4,5,6].map((n) => (
+                {[1, 2, 3, 4, 5, 6].map((n) => (
                   <div key={n} className={`hero-paw hero-paw-${n}`}>
                     <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                       {/* Main pad */}
@@ -705,9 +705,7 @@ export default function PortfolioHome() {
                 {/* Text + CTA */}
                 <div className="hero-text-cta">
                   <p className="lead">
-                    UI/UX designer from Bhavnagar. I design websites, landing pages
-                    and mobile screens, plus the brand work that goes around them:
-                    logos, brochures and social media.
+                    vijay
                   </p>
                   <div className="cta">
                     <a
@@ -737,105 +735,105 @@ export default function PortfolioHome() {
                     <svg className="cat-svg" viewBox="0 0 200 190" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                       {/* Glow circles behind cat */}
-                      <circle cx="90" cy="112" r="68" fill="var(--cat)" opacity="0.13"/>
-                      <circle cx="90" cy="112" r="54" fill="var(--cat)" opacity="0.09"/>
+                      <circle cx="90" cy="112" r="68" fill="var(--cat)" opacity="0.13" />
+                      <circle cx="90" cy="112" r="54" fill="var(--cat)" opacity="0.09" />
 
                       {/* Tail — sweeps to the right, fully inside viewBox, pivot at base (110,152) */}
                       <g className="cat-tail">
-                        <path d="M110 152 Q148 142 146 118 Q144 100 130 108" stroke="var(--cat)" strokeWidth="8" strokeLinecap="round" fill="none"/>
-                        <path d="M110 152 Q148 142 146 118 Q144 100 130 108" stroke="var(--onacc)" strokeWidth="3" strokeLinecap="round" fill="none" opacity="0.28"/>
+                        <path d="M110 152 Q148 142 146 118 Q144 100 130 108" stroke="var(--cat)" strokeWidth="8" strokeLinecap="round" fill="none" />
+                        <path d="M110 152 Q148 142 146 118 Q144 100 130 108" stroke="var(--onacc)" strokeWidth="3" strokeLinecap="round" fill="none" opacity="0.28" />
                         {/* Tail tip ball */}
-                        <circle cx="130" cy="108" r="5" fill="var(--cat)"/>
-                        <circle cx="130" cy="108" r="3" fill="var(--onacc)" opacity="0.4"/>
+                        <circle cx="130" cy="108" r="5" fill="var(--cat)" />
+                        <circle cx="130" cy="108" r="3" fill="var(--onacc)" opacity="0.4" />
                       </g>
 
                       {/* Body — rounder, cuter */}
-                      <ellipse cx="90" cy="145" rx="36" ry="32" fill="var(--cat)"/>
+                      <ellipse cx="90" cy="145" rx="36" ry="32" fill="var(--cat)" />
 
                       {/* Tummy patch */}
-                      <ellipse cx="90" cy="148" rx="20" ry="21" fill="var(--onacc)" opacity="0.28"/>
+                      <ellipse cx="90" cy="148" rx="20" ry="21" fill="var(--onacc)" opacity="0.28" />
 
                       {/* Head */}
-                      <circle cx="90" cy="94" r="34" fill="var(--cat)"/>
+                      <circle cx="90" cy="94" r="34" fill="var(--cat)" />
 
                       {/* Face inner muzzle */}
-                      <ellipse cx="90" cy="101" rx="17" ry="14" fill="var(--onacc)" opacity="0.32"/>
+                      <ellipse cx="90" cy="101" rx="17" ry="14" fill="var(--onacc)" opacity="0.32" />
 
                       {/* Ear left */}
                       <g className="cat-ear-l">
-                        <polygon points="60,72 52,46 78,62" fill="var(--cat)"/>
-                        <polygon points="62,70 56,50 76,63" fill="var(--onacc)" opacity="0.45"/>
+                        <polygon points="60,72 52,46 78,62" fill="var(--cat)" />
+                        <polygon points="62,70 56,50 76,63" fill="var(--onacc)" opacity="0.45" />
                       </g>
                       {/* Ear right */}
                       <g className="cat-ear-r">
-                        <polygon points="120,72 128,46 102,62" fill="var(--cat)"/>
-                        <polygon points="118,70 124,50 104,63" fill="var(--onacc)" opacity="0.45"/>
+                        <polygon points="120,72 128,46 102,62" fill="var(--cat)" />
+                        <polygon points="118,70 124,50 104,63" fill="var(--onacc)" opacity="0.45" />
                       </g>
 
                       {/* Eyes — big happy sparkling */}
                       <g className="cat-eye-l">
-                        <ellipse cx="76" cy="90" rx="7.5" ry="8" fill="#1A1208"/>
-                        <circle cx="78.5" cy="87.5" r="2.2" fill="white"/>
-                        <circle cx="73.5" cy="92.5" r="1.1" fill="white" opacity="0.6"/>
+                        <ellipse cx="76" cy="90" rx="7.5" ry="8" fill="#1A1208" />
+                        <circle cx="78.5" cy="87.5" r="2.2" fill="white" />
+                        <circle cx="73.5" cy="92.5" r="1.1" fill="white" opacity="0.6" />
                       </g>
                       <g className="cat-eye-r">
-                        <ellipse cx="104" cy="90" rx="7.5" ry="8" fill="#1A1208"/>
-                        <circle cx="106.5" cy="87.5" r="2.2" fill="white"/>
-                        <circle cx="101.5" cy="92.5" r="1.1" fill="white" opacity="0.6"/>
+                        <ellipse cx="104" cy="90" rx="7.5" ry="8" fill="#1A1208" />
+                        <circle cx="106.5" cy="87.5" r="2.2" fill="white" />
+                        <circle cx="101.5" cy="92.5" r="1.1" fill="white" opacity="0.6" />
                       </g>
 
                       {/* Nose */}
-                      <polygon points="90,102 87,106 93,106" fill="#1A1208" opacity="0.65"/>
+                      <polygon points="90,102 87,106 93,106" fill="#1A1208" opacity="0.65" />
 
                       {/* Mouth — default neutral */}
-                      <path className="cat-mouth-default" d="M85 108 Q90 112 95 108" stroke="#1A1208" strokeWidth="1.8" strokeLinecap="round" fill="none" opacity="0.55"/>
+                      <path className="cat-mouth-default" d="M85 108 Q90 112 95 108" stroke="#1A1208" strokeWidth="1.8" strokeLinecap="round" fill="none" opacity="0.55" />
 
                       {/* Mouth — hover shy cute closed smile, slightly asymmetric */}
                       <g className="cat-mouth-hover">
                         {/* Shy small closed curved smile — left side slightly higher, right dips more */}
-                        <path d="M84 108 Q88 115 92 112 Q95 110 96 108" stroke="#1A1208" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" fill="none" opacity="0.75"/>
+                        <path d="M84 108 Q88 115 92 112 Q95 110 96 108" stroke="#1A1208" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" fill="none" opacity="0.75" />
                         {/* Tiny dimple dot on the right cheek — shy touch */}
-                        <circle cx="100" cy="107" r="1.4" fill="#1A1208" opacity="0.20"/>
+                        <circle cx="100" cy="107" r="1.4" fill="#1A1208" opacity="0.20" />
                       </g>
 
                       {/* Blush — always visible subtle peach */}
                       <g className="cat-blush-default">
-                        <ellipse cx="66" cy="101" rx="9" ry="6" fill="#F5B08A" opacity="0.5"/>
-                        <ellipse cx="114" cy="101" rx="9" ry="6" fill="#F5B08A" opacity="0.5"/>
+                        <ellipse cx="66" cy="101" rx="9" ry="6" fill="#F5B08A" opacity="0.5" />
+                        <ellipse cx="114" cy="101" rx="9" ry="6" fill="#F5B08A" opacity="0.5" />
                       </g>
 
                       {/* Whiskers left */}
-                      <line x1="44" y1="99"  x2="72" y2="102" stroke="#1A1208" strokeWidth="1.4" strokeLinecap="round" opacity="0.28"/>
-                      <line x1="44" y1="105" x2="72" y2="105" stroke="#1A1208" strokeWidth="1.4" strokeLinecap="round" opacity="0.28"/>
-                      <line x1="44" y1="111" x2="72" y2="108" stroke="#1A1208" strokeWidth="1.4" strokeLinecap="round" opacity="0.28"/>
+                      <line x1="44" y1="99" x2="72" y2="102" stroke="#1A1208" strokeWidth="1.4" strokeLinecap="round" opacity="0.28" />
+                      <line x1="44" y1="105" x2="72" y2="105" stroke="#1A1208" strokeWidth="1.4" strokeLinecap="round" opacity="0.28" />
+                      <line x1="44" y1="111" x2="72" y2="108" stroke="#1A1208" strokeWidth="1.4" strokeLinecap="round" opacity="0.28" />
 
                       {/* Whiskers right */}
-                      <line x1="136" y1="99"  x2="108" y2="102" stroke="#1A1208" strokeWidth="1.4" strokeLinecap="round" opacity="0.28"/>
-                      <line x1="136" y1="105" x2="108" y2="105" stroke="#1A1208" strokeWidth="1.4" strokeLinecap="round" opacity="0.28"/>
-                      <line x1="136" y1="111" x2="108" y2="108" stroke="#1A1208" strokeWidth="1.4" strokeLinecap="round" opacity="0.28"/>
+                      <line x1="136" y1="99" x2="108" y2="102" stroke="#1A1208" strokeWidth="1.4" strokeLinecap="round" opacity="0.28" />
+                      <line x1="136" y1="105" x2="108" y2="105" stroke="#1A1208" strokeWidth="1.4" strokeLinecap="round" opacity="0.28" />
+                      <line x1="136" y1="111" x2="108" y2="108" stroke="#1A1208" strokeWidth="1.4" strokeLinecap="round" opacity="0.28" />
 
                       {/* Front paws */}
                       <g className="cat-paw-l">
-                        <ellipse cx="70" cy="172" rx="12" ry="9" fill="var(--cat)"/>
-                        <ellipse cx="58" cy="169" rx="8" ry="7" fill="var(--cat)"/>
-                        <circle cx="66" cy="177" r="2.2" fill="var(--onacc)" opacity="0.35"/>
-                        <circle cx="74" cy="178" r="2.2" fill="var(--onacc)" opacity="0.35"/>
+                        <ellipse cx="70" cy="172" rx="12" ry="9" fill="var(--cat)" />
+                        <ellipse cx="58" cy="169" rx="8" ry="7" fill="var(--cat)" />
+                        <circle cx="66" cy="177" r="2.2" fill="var(--onacc)" opacity="0.35" />
+                        <circle cx="74" cy="178" r="2.2" fill="var(--onacc)" opacity="0.35" />
                       </g>
                       <g className="cat-paw-r">
-                        <ellipse cx="110" cy="172" rx="12" ry="9" fill="var(--cat)"/>
-                        <ellipse cx="122" cy="169" rx="8" ry="7" fill="var(--cat)"/>
-                        <circle cx="106" cy="177" r="2.2" fill="var(--onacc)" opacity="0.35"/>
-                        <circle cx="114" cy="178" r="2.2" fill="var(--onacc)" opacity="0.35"/>
+                        <ellipse cx="110" cy="172" rx="12" ry="9" fill="var(--cat)" />
+                        <ellipse cx="122" cy="169" rx="8" ry="7" fill="var(--cat)" />
+                        <circle cx="106" cy="177" r="2.2" fill="var(--onacc)" opacity="0.35" />
+                        <circle cx="114" cy="178" r="2.2" fill="var(--onacc)" opacity="0.35" />
                       </g>
 
                       {/* Body stripes */}
-                      <path d="M72 130 Q90 125 108 130" stroke="var(--ink)" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.10"/>
-                      <path d="M70 142 Q90 137 110 142" stroke="var(--ink)" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.10"/>
-                      <path d="M72 154 Q90 149 108 154" stroke="var(--ink)" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.07"/>
+                      <path d="M72 130 Q90 125 108 130" stroke="var(--ink)" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.10" />
+                      <path d="M70 142 Q90 137 110 142" stroke="var(--ink)" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.10" />
+                      <path d="M72 154 Q90 149 108 154" stroke="var(--ink)" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.07" />
 
                       {/* Head stripe */}
-                      <path d="M82 65 Q90 61 98 65" stroke="var(--ink)" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.10"/>
-                      <path d="M85 74 Q90 70 95 74" stroke="var(--ink)" strokeWidth="1.2" strokeLinecap="round" fill="none" opacity="0.10"/>
+                      <path d="M82 65 Q90 61 98 65" stroke="var(--ink)" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.10" />
+                      <path d="M85 74 Q90 70 95 74" stroke="var(--ink)" strokeWidth="1.2" strokeLinecap="round" fill="none" opacity="0.10" />
 
                     </svg>
                   </div>
