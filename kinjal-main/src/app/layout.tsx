@@ -16,8 +16,13 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   viewportFit: "cover",
-  colorScheme: "light",
-  themeColor: "#F5F0E8",
+  colorScheme: "light",           // tells browser: only light mode supported
+  themeColor: [
+    // Both media entries return the SAME warm-white — locks the chrome colour
+    // regardless of whether the OS is in light or dark mode.
+    { media: "(prefers-color-scheme: light)", color: "#F5F0E8" },
+    { media: "(prefers-color-scheme: dark)",  color: "#F5F0E8" },
+  ],
 };
 
 const fontDisplay = Bricolage_Grotesque({
@@ -120,6 +125,11 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`js ${fontDisplay.variable} ${fontSans.variable}`}
     >
+      <head>
+        {/* Force light-only color-scheme so dark-mode browsers don't recolour anything */}
+        <meta name="color-scheme" content="light" />
+        <meta name="supported-color-schemes" content="light" />
+      </head>
       <body>
         <script
           type="application/ld+json"
